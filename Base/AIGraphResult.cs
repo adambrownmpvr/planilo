@@ -1,7 +1,8 @@
-namespace Planilo {
+namespace Planilo
+{
 
-  /// <summary>
-  /// Base class for all types AI graphs results.
-  /// </summary>
-  public abstract class AIGraphResult { }
+    /// <summary>
+    /// Base class for all types AI graphs results.
+    /// </summary>
+    public abstract class AIGraphResult { }
 }

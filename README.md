@@ -1,12 +1,3 @@
-![planilo](https://user-images.githubusercontent.com/1077394/91163953-be4d8d80-e6a4-11ea-9f86-127a6374235d.png)
-
-[![Discord](http://img.shields.io/badge/discord-join-lightblue?logo=discord&style=flat)](https://discord.gg/QrMfMsy)
-
-A set of tools for designing AI in a visual node editor on unity. Use for:
-* Behavior Trees.
-* Finite State Machines.
-* Implement your own AI graphs.
-
 ## Road to v0.2.0
 I'm in the process of updating this repository, if you are interested in seeing the changes follow the `development` branch. Also feel free to jump on discord with any suggestions you might have about how to improve these tools.
 

@@ -1,7 +1,10 @@
-﻿{
-	"name": "Planilo",
-	"references": ["XNode","XNodeEditor"],
-    "optionalUnityReferences": [],
+{
+    "name": "nimbus.planilo",
+    "rootNamespace": "",
+    "references": [
+        "XNode",
+        "XNodeEditor"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -9,5 +12,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }
