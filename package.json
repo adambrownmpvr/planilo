@@ -5,6 +5,6 @@
    "unity":"2018.1",
    "displayName":"Nimbus Planilo",
    "dependencies":{
-      "com.github.siccity.xnode":"https://github.com/siccity/xNode.git"
+      "com.github.siccity.xnode":"1.8.0"
    }
 }
