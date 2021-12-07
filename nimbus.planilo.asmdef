@@ -2,8 +2,7 @@
     "name": "nimbus.planilo",
     "rootNamespace": "",
     "references": [
-        "XNode",
-        "XNodeEditor"
+        "nimbus.xNode"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
