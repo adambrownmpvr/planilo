@@ -32,7 +32,7 @@ namespace Planilo.BT
             for (int i = 0; i < childCount; i++)
             {
                 BTConnection connection = _composite.GetChildConnection(i);
-                NodePort port = target.GetOutputPort(connection.PortName);
+                NodePort port = target.GetOutputPort(connection.portName);
                 NodePort connected = port.Connection;
 
                 if (connected == null)

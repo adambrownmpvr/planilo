@@ -54,7 +54,7 @@ namespace Planilo.BT
             // Check port type.
             if (connection.ValueType != typeof(BTConnection)) { return; }
             // Create new exit port.
-            NodePort newport = AddInstanceOutput(typeof(BTConnection), Node.ConnectionType.Override);
+            NodePort newport = AddDynamicOutput(typeof(BTConnection), Node.ConnectionType.Override);
             _children.Add(new BTConnection(this, newport.fieldName));
             // Add connection.
             newport.Connect(connection);
@@ -67,7 +67,7 @@ namespace Planilo.BT
             // Make sure index is valid.
             if (_children.Count <= index) { return; }
             // Remove port and transition.
-            RemoveInstancePort(_children[index].PortName);
+            RemoveDynamicPort(_children[index].portName);
             _children.RemoveAt(index);
         }
 

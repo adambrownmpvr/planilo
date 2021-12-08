@@ -19,13 +19,13 @@ namespace Planilo.BT
         bool _isEmpty;
 
         /// <summary>Returns the port name.</summary>
-        public string PortName
+        public string portName
         {
             get { return _portName; }
         }
 
         /// <summary>Returns the connected node.</summary>
-        public bool Connected
+        public bool isConnected
         {
             get { return _connected; }
         }
@@ -41,7 +41,7 @@ namespace Planilo.BT
         }
 
         /// <summary>Initializes the connection caching required data for execution.</summary>
-        public void Init()
+        public virtual void Init()
         {
             // Cache type of connected node.
             NodePort port = _node.GetOutputPort(_portName);
@@ -50,10 +50,12 @@ namespace Planilo.BT
         }
 
         /// <summary>Runs the child node connected through this connection.</summary>
-        public BTGraphResult Run()
+        public virtual BTGraphResult Run()
         {
             // Return null if not connected.
-            if (_isEmpty) { return BTGraphResult.Failure; }
+            if (_isEmpty) 
+                return BTGraphResult.Failure;
+
             return (_connected as BTNode).Run();
         }
     }
