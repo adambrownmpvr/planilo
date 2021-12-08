@@ -1,11 +1,12 @@
 {
-    "name": "nimbus.planilo",
+    "name": "nimbus.planilo.serializable_dict.editor",
     "rootNamespace": "",
     "references": [
-        "nimbus.xNode",
-        "nimbus.planilo.serializable_dict"
+        "GUID:f39584394210c9744ae93dc7ccfd6634"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
