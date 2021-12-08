@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
@@ -10,13 +8,13 @@ namespace Planilo.BT
     public class BTConnection
     {
         /// <summary>Node to which this connection belongs to.</summary>
-        [SerializeField] [HideInInspector] Node _node;
+        [SerializeField] [HideInInspector] protected Node _node;
         /// <summary>Node to which this connects to.</summary>
-        Node _connected;
+        protected Node _connected;
         /// <summary>Port name through which this connects.</summary>
-        [SerializeField] [HideInInspector] string _portName;
+        [SerializeField] [HideInInspector] protected string _portName;
         /// <summary>Is the port connected?</summary>
-        bool _isEmpty;
+        protected bool _isEmpty;
 
         /// <summary>Returns the port name.</summary>
         public string portName
