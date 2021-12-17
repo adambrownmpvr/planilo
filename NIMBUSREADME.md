@@ -1,5 +1,10 @@
 This file outlines the changes made to the BASE planilo asset.
 
+### [12/17/2021] ADAM BROWN ###
+
+# Changes
+- BTConnection: Added null check around empty connected node in Init()
+
 ### [12/08/2021] ADAM BROWN ###
 
 # Changes

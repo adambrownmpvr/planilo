@@ -41,10 +41,18 @@ namespace Planilo.BT
         /// <summary>Initializes the connection caching required data for execution.</summary>
         public virtual void Init()
         {
-            // Cache type of connected node.
-            NodePort port = _node.GetOutputPort(_portName);
-            _isEmpty = port == null || port.Connection == null;
-            _connected = !_isEmpty ? port.Connection.node : null;
+            if (_node != null)
+            {
+                // Cache type of connected node.
+                NodePort port = _node.GetOutputPort(_portName);
+                _isEmpty = port == null || port.Connection == null;
+                _connected = !_isEmpty ? port.Connection.node : null;
+            }
+            else
+            {
+                _isEmpty = true;
+                _connected = null;
+            }
         }
 
         /// <summary>Runs the child node connected through this connection.</summary>
