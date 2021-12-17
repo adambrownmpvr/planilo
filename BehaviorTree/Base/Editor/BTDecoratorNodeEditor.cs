@@ -28,16 +28,15 @@ namespace Planilo.BT
             // Check if we need to create new exit.
             _child = target.GetOutputPort("_child");
             if (_child == null)
-            {
-                _child = target.AddInstanceOutput(typeof(BTConnection), Node.ConnectionType.Override, Node.TypeConstraint.Inherited, "_child");
-            }
+                _child = target.AddDynamicOutput(typeof(BTConnection), Node.ConnectionType.Override, Node.TypeConstraint.Inherited, "_child");
 
+#if !ODIN_INSPECTOR
             // Output port field.
             GUILayout.BeginHorizontal();
             EditorGUILayout.Space();
             NodeEditorGUILayout.PortField(_child, GUILayout.Width(60));
             GUILayout.EndHorizontal();
-
+#endif
             // Update connection values.
             if (_child.Connection == null)
             {

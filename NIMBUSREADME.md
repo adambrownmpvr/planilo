@@ -4,6 +4,7 @@ This file outlines the changes made to the BASE planilo asset.
 
 # Changes
 - BTConnection: Added null check around empty connected node in Init()
+- BTDecoratorNodeEditor: Added a pre-processor #if to draw the child node port, to avoid a double draw
 
 ### [12/08/2021] ADAM BROWN ###
 
