@@ -1,5 +1,15 @@
 This file outlines the changes made to the BASE planilo asset.
 
+### [12/23/2021] ADAM BROWN ###
+
+# Changes
+- BTGraph: 
+	- Added override to Copy() method to support Planilo behaviors in xNode
+	- Added renaming of nodes in Copy() method
+	- Set Root only sets node.isRoot to false if it is a node inside the graph
+	- Set Root only sets node to root if node is in graph
+
+
 ### [12/17/2021] ADAM BROWN ###
 
 # Changes
