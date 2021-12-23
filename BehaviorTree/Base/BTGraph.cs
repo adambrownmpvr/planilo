@@ -36,22 +36,10 @@ namespace Planilo.BT
 
         public override NodeGraph Copy()
         {
-            // Instantiate a new nodegraph instance
-            BTGraph graph = Instantiate(this);
-
-            // Instantiate all nodes inside the graph
-            for (int i = 0; i < nodes.Count; i++)
+            BTGraph graph = base.Copy() as BTGraph;// handling for setting root
+            for(int i = 0; i < nodes.Count; i++)
             {
-                if (nodes[i] == null) continue;
-                Node.graphHotfix = graph;
-                Node node = Instantiate(nodes[i]);
-                node.graph = graph;
-
-                // replace (Clone) in node name to avoid issues with blackboard
-                node.name = node.name.Replace("(Clone)", "");
-                graph.nodes[i] = node;
-
-                // handling for setting root
+                Node node = graph.nodes[i];
                 BTBranchNode originalNode = nodes[i] as BTBranchNode;
                 if (originalNode != null && originalNode.IsRoot)
                 {
@@ -59,15 +47,6 @@ namespace Planilo.BT
                     graph.SetRoot(node as BTBranchNode);
                 }
             }
-
-            // Redirect all connections
-            for (int i = 0; i < graph.nodes.Count; i++)
-            {
-                if (graph.nodes[i] == null) continue;
-                foreach (NodePort port in graph.nodes[i].Ports)
-                    port.Redirect(nodes, graph.nodes);
-            }
-
             return graph;
         }
 

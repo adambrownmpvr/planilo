@@ -8,6 +8,7 @@ This file outlines the changes made to the BASE planilo asset.
 	- Added renaming of nodes in Copy() method
 	- Set Root only sets node.isRoot to false if it is a node inside the graph
 	- Set Root only sets node to root if node is in graph
+	- Rather than copying the Copy method, we derive from it, and add the root setting/unsetting as extra after the base logic
 
 
 ### [12/17/2021] ADAM BROWN ###
