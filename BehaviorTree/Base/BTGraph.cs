@@ -7,7 +7,7 @@ namespace Planilo.BT
 {
 
     /// <summary>Class to represent a behavior tree as an AIGraph.</sumamry>
-    [CreateAssetMenu(fileName = "BehaviorTree", menuName = "BT/BehaviorTree", order = 1)]
+    [CreateAssetMenu(fileName = "BehaviorTree", menuName = "Nimbus/Graphs/Behavior Tree", order = 1)]
     public class BTGraph : AIGraph
     {
         /// <summary>Root node of the behavior tree.</summary>

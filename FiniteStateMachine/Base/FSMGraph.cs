@@ -7,7 +7,7 @@ namespace Planilo.FSM
 {
 
     /// <summary>Class to represent a Finite State Machine as an AI graph.</summary>
-    [CreateAssetMenu(fileName = "Machine", menuName = "FSM/Machine", order = 1)]
+    [CreateAssetMenu(fileName = "Machine", menuName = "Nimbus/Graphs/Finite State Machine", order = 1)]
     public class FSMGraph : AIGraph
     {
 

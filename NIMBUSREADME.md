@@ -1,5 +1,14 @@
 This file outlines the changes made to the BASE planilo asset.
 
+### [01/07/2022] ADAM BROWN ###
+
+# Changes
+- BTGraph:
+	- renamed menuName in CreateAssetMenuAttribute call
+
+- FSMGraph:
+	- renamed menuName in CreateAssetMenuAttribute call
+
 ### [12/23/2021] ADAM BROWN ###
 
 # Changes
