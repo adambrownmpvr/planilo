@@ -1,5 +1,11 @@
 This file outlines the changes made to the BASE planilo asset.
 
+### [01/11/2022] ADAM BROWN ###
+
+# Changes
+- BTEditor:
+	- Commented out the requirement for nodes to be derived from BTNode or BlackboardBaseNode to be shown in BTGraphs
+
 ### [01/07/2022] ADAM BROWN ###
 
 # Changes
