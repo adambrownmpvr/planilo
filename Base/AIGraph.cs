@@ -33,6 +33,9 @@ namespace Planilo
             T result = default(T);
             if (_blackboard.variables.TryGetValue(key, out value))
             {
+                if (value == null)
+                    return default;
+
                 // Make sure the type is valid.
                 result = value.GetType().IsAssignableFrom(typeof(T)) ? (T)value : default(T);
             }
