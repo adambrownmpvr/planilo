@@ -32,5 +32,10 @@ namespace Planilo
             NodePort port = GetOutputPort("_value");
             return GetValue(port);
         }
+
+        public override void SetValue(object a_value)
+        {
+            _value = (T)a_value;
+        }
     }
 }

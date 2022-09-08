@@ -11,6 +11,7 @@ namespace Planilo
     [NodeTint("#6b2e38")]
     public abstract class BlackboardBaseNode : Node
     {
+        public abstract void SetValue(object a_value);
 
         /// <summary>The current value of the blackboard variable.</summary>
         public abstract object GetValue();
